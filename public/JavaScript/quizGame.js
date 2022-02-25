@@ -84,7 +84,7 @@ getNewQuestion = () => {
 
   acceptingAnswers = true;
 };
-
+acceptingAnswers = true;
 choices.forEach((choice) => {
   choice.addEventListener("click", (e) => {
     if (!acceptingAnswers) return;
@@ -94,7 +94,7 @@ choices.forEach((choice) => {
     const selectedAnswer = selectedChoice.dataset["number"];
     
     var classToApply = "incorrect";
-    if (selectedAnswer == currentQuestion.answer) {
+    if (e.target.innerText == currentQuestion.answer) {
       classToApply = "correct";
     }
 
