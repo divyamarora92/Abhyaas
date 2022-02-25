@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+<!--SIDE BAR-->
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+                    <div class="sidebar-brand-icon  mt-5 ml-0"><img src="img/student.svg" height="30px" width="30px">
+                    <span class="head text-dark">1802912062 </span></div>
+                </a>
+                <br>
+                <br>
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
+                     <li class="nav-item"><a class="nav-link " href="home.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+                   <li class="nav-item"><a class="nav-link" href="facultylist.html"><i class="fas fa-user-friends mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child"><b>Faculties</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="class.html"><i class="fas fa-book-open mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child" ><b>Classes</b></span></a></li>
+                    
+                    
+                    <li class="nav-item"><a class="nav-link" href="chat.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-user-cog mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child"><b>Settings</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Profile</b></span></a></li>
+                </ul>
+<!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
+                <div class="text-center" style="font-weight: 900; margin-top: 80px;"><a href="index.html"><button type="button" class="btn btn-outline-primary"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a>
+</div>
+                
+                
+            </div>
+        </nav>
+      
+      <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+            <div class="container-fluid" style="background-color: white; ">
+                <div class="row">
+                    <div class="col-sm-9" style="background-color: whitesmoke; height: 800px">
+                        <br>
+                        <br>
+                        <h3 id="title" style="font-weight: 900;color: #0080ff"></h3><h6 style="font-weight: 400;color: #0080ff">This is your today's class schedule.</h6>
+                        <div class="card" style="height:600px">
+                            <div class=row>
+                            <div class="card-body d1 col-sm-6"  >
+                                <br>
+                                <h3><b>Time Table</b></h3>
+                                <p style="font-size:70%">Monday 17-may-2020</p>
+                                <hr>
+                                <div style=" height: 450px; overflow-y:scroll " class="scrollbar">
+                                    
+                                <div class="card-body d1" style="background-color:#b8ffe4;border-radius: 10px;width:95%">
+                                <div class="row">
+                                    <div class=col-sm-3><img class="responsive" src="img/physics.svg" style="width: 100%;height: auto"></div>
+                                    <div class=col-sm-6><h5 align=center style="padding-top:25px;font-weight:700;color: #18c991">PHYSICS</h5></div>
+                                    <div class=col-sm-3><p align=center style="padding-top: 15px;font-size: 12px">8:00 8:50</p></div>
+                                    
+                                </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="card-body d1" style="background-color:#b8ffe4;border-radius: 10px;width:95%">
+                                <div class=row>
+                                    <div class=col-sm-3><img class="responsive" src="img/physics.svg" style="width: 100%;height: auto"></div>
+                                    <div class=col-sm-6><h5 align=center style="padding-top:25px;font-weight:700;color: #18c991">PHYSICS</h5></div>
+                                    <div class=col-sm-3><p align=center style="padding-top: 15px;font-size: 12px">8:00 8:50</p></div>
+                                    
+                                </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="card-body d1" style="background-color:#ffe6d4;border-radius: 10px;width:95%">
+                                <div class=row>
+                                    <div class=col-sm-3><img class="responsive" src="img/chemistry.svg" style="width: 100%;height: auto"></div>
+                                    <div class=col-sm-6><h5 align=center style="padding-top:25px;font-weight:700;color: #f0b359">CHEMISTRY</h5></div>
+                                    <div class=col-sm-3><p align=center style="padding-top: 15px;font-size: 12px">9:00 9:50</p></div>
+                                    
+                                </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="card-body d1" style="background-color:#d1f8ff;border-radius: 10px;width:95%">
+                                <div class=row>
+                                    <div class=col-sm-3><img class="responsive" src="img/physics.svg" style="width: 100%;height: auto"></div>
+                                    <div class=col-sm-6><h5 align=center style="padding-top:25px;font-weight:700;color:#6dcfed">GEOGRAPHY</h5></div>
+                                    <div class=col-sm-3><p align=center style="padding-top: 15px;font-size: 12px">7:00 7:50</p></div>
+                                    
+                                </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="card-body d1" style="background-color: aquamarine;border-radius: 10px;width:95%;">
+                                <div class=row>
+                                    <div class=col-sm-3><img class="responsive" src="img/physics.svg" style="width: 100%;height: auto"></div>
+                                    <div class=col-sm-6><h5 align=center style="padding-top:25px;font-weight:700">MATHS</h5></div>
+                                    <div class=col-sm-3><p align=center style="padding-top: 15px;font-size: 12px">7:00 7:50</p></div>
+                                    
+                                </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <div class="card-body d1" style="background-color: aquamarine;border-radius: 10px;width:95%">
+                                <div class=row>
+                                    <div class=col-sm-3><img class="responsive" src="img/physics.svg" style="width: 100%;height: auto"></div>
+                                    <div class=col-sm-6><h5 align=center style="padding-top:25px;font-weight:700">MATHS</h5></div>
+                                    <div class=col-sm-3><p align=center style="padding-top: 15p25pxx;font-size: 12px">7:00 7:50</p></div>
+                                    
+                                </div>
+                                </div>
+                                </div>
+                            </div>
+                                <div class="card-body d1 col-sm-6" style="margin-top: 100px">
+                                    <div class="month">      
+                                        <ul>
+                                            <li class="prev">&#10094;</li>
+                                            <li class="next">&#10095;</li>
+                                            <li>
+                                                October<br>
+                                                <span style="font-size:18px">2020</span>
+                                            </li
+                                        </ul>
+                                            </div>
+                                        <ul class="weekdays">
+                                            <li>Mo</li>
+                                            <li>Tu</li>
+                                            <li>We</li>
+                                            <li>Th</li>
+                                            <li>Fr</li>
+                                            <li>Sa</li>
+                                            <li>Su</li>
+                                        </ul>
+                                        <ul class="days">  
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>5</li>
+                                            <li>6</li>
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>10</li>
+                                            <li>11</li>
+                                            <li>12</li>
+                                            <li>13</li>
+                                            <li>14</li>
+                                            <li>15</li>
+                                            <li>16</li>
+                                            <li>17</li>
+                                            <li><span class="active">18</span></li>
+                                            <li>19</li>
+                                            <li>20</li>
+                                            <li>21</li>
+                                            <li>22</li>
+                                            <li>23</li>
+                                            <li>24</li>
+                                            <li>25</li>
+                                            <li>26</li>
+                                            <li>27</li>
+                                            <li>28</li>
+                                            <li>29</li>
+                                            <li>30</li>
+                                            <li>31</l
+                                        </ul>
+
+
+
+                                
+                                
+                                </div>
+                            </div>
+                                
+                            
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    </div>
+        
+        
+        
+        
+                        
+                        
+                        
+                        
+                       
+        
+        
+        <div class="col-sm-3 " style="color: black; background-color: white;">
+                        <img src="img/kiet%20logo.png" height="100px" width="100px" style="border:5px solid #2fa388" class="rounded-circle mx-auto d-block mt-5" align="center" alt="KIET"><br>
+                        <h5 align="center"><b>KIET Group of Institutions</b></h5>
+                        <h6 align="center"><a href="#" ><em>www.kiet.edu</em></a></h6><br>
+                        <div class="card ml-1 mr-1">
+                            <div class="card-body pr-3 pl-3 " style="background-color:lightgrey">
+                                <h5 align="center"><em><b>Upcoming Events</b></em></h5><br>
+                                <ol>
+                                    
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                  
+                                    
+                                </ol>
+                            </div>
+                            
+                        </div>
+                       
+                    
+                
+            </div>
+        </div>
+                </div>
+            
+            </div>
+    </div>
+        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+ <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+ <script src="js/init.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

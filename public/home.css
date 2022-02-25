@@ -1,0 +1,406 @@
+.card{
+    box-shadow:0 0 3px rgba(0 ,0 ,0 ,0.1 );
+}
+.effect:hover{
+    box-shadow:0 2px 8px rgba(0 ,0 ,0 ,0.1 );
+    border: 2px solid grey;
+    transition-duration: 0.5s;
+}
+
+.d5
+{
+    height:100px;
+}
+.card-title{
+    font-weight: 800;
+}
+.card-text{
+    font-weight: 600;
+}
+span.child:hover{
+    
+    font-weight: 800;
+}
+span.child{
+    font-size: 130%;
+    color: grey;
+    font-weight: 400;
+}
+.sidebar-brand-icon{
+    height:50px;
+    width: 160px;
+    padding-top: 10px;
+    border-radius: 4px;
+    background-color: #ffe0e0; 
+}
+body{
+     background-color: white;
+}
+.box{
+    margin-top: 90px;
+    margin-left: 12%;
+    height: 630px;
+    width: 75%;
+    
+}
+.cardlogin{
+    height: 630px;
+    width: 100%;
+}
+.c1{
+    border: 2px solid #e88935;
+    height: 70px;
+    width:30%;
+    padding-left: -20px;
+    color: #e88935;
+    
+}
+.c2{
+    border: 2px solid #55b0e6;
+    height: 70px;
+    width:30%;
+    color: #55b0e6;
+    
+}
+
+.l1{
+    font-size: 150%;
+    color: #e88935;
+    font-weight: 800;
+    
+   
+}
+.l2{
+    font-size: 150%;
+    color: #55b0e6;
+    font-weight: 800;
+    
+   
+}
+
+input[type=text], input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #e88935;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #e88935;
+  color: white;
+  padding: 14px 20px;
+  margin: 16px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #e88935;
+    font-size: 110%;
+    transition-duration: 0.1s;
+    
+    
+   
+}
+input[type=submit]:focus{
+    box-shadow: 0 0 8px #e88935;
+    outline: none;
+    
+} 
+input[type=text]:focus{
+    box-shadow: 0 0 3px #e88935;
+    outline: none;
+    
+} 
+input[type=password]:focus{
+    box-shadow: 0 0 3px #e88935;
+    outline: none;
+} 
+.teacherLogin input[type=submit]:focus{
+    box-shadow: 0 0 8px blue;
+    outline: none;
+    
+}
+.teacherLogin input[type=text]:focus{
+    box-shadow: 0 0 3px blue;;
+    outline: none;
+    
+} 
+.teacherLogin input[type=password]:focus{
+    box-shadow: 0 0 3px blue;
+    outline: none;
+}
+.teacherRegister input[type=submit]:focus{
+    box-shadow: 0 0 6px blue;
+    outline: none;
+}
+.teacherRegister input[type=text]:focus{
+    box-shadow: 0 0 3px blue;;
+    outline: none;
+    
+} 
+.teacherRegister input[type=password]:focus{
+    box-shadow: 0 0 3px blue;
+    outline: none;
+}
+
+.sbtn:focus{
+    outline: none;
+}
+.tbtn:focus{
+    outline: none;
+}
+.sbtn:hover{
+    border: 3px solid #e88935;
+}
+.tbtn:hover{
+     border: 3px solid #55b0e6;
+}
+
+
+.lform{
+  border-radius: 5px;
+  background-color: White;
+  
+}
+.l2form{
+  border-radius: 5px;
+  background-color: White;
+  
+}
+label{
+    color: #e88935;
+}
+.s1{
+    color: #55b0e6;
+    
+}
+.s2{
+    color: #e88935;
+    
+}
+.btnw{
+    border-radius: 25px;
+    background-color: #33de8b;
+    color: white;
+    
+}
+.btnw2{
+    border-radius: 25px;
+    background-color: #13ccd6;
+    color: white;
+    
+}
+.exps{
+    height: 110px;
+    width: 60%;
+    background-color: #d4ffe3;
+    border-radius: 5px;
+}
+.scrollbar{
+    overflow-y: scroll;
+    height: 450px;
+}
+#prevlectures{
+    overflow-y: scroll;
+    height: 200px;
+}
+
+.scrollbar::-webkit-scrollbar,#prevlectures::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track, #prevlectures::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 2px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb,#prevlectures::-webkit-scrollbar-thumb {
+  background-color: gainsboro;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.scrollbar::-webkit-scrollbar-thumb:hover,#prevlectures::-webkit-scrollbar-thumb:hover {
+  background: ; 
+}
+.sub{
+    height: 290px;
+    width: 100%;
+    margin-top: 30px;
+    border: 3px solid #70d4d4;
+    
+    border-radius: 10px;
+    
+}
+.sub1{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #32b8b8;
+}
+.sb1{
+    background-color: #7bd4a6;
+    color: white;
+
+    border-top-left-radius: 5px;
+    
+    
+}
+.sb2{
+    background-color: #dff5e9;
+    color: #7bd4a6;
+    
+    
+}
+.suba{
+    height: 290px;
+    width: 100%;
+    margin-top: 30px;
+    border: 3px solid #fc765b;
+    
+    border-radius: 10px;
+    
+}
+.suba1{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid #fc765b;
+}
+.sa1{
+    background-color: #fc765b;
+    color: white;
+
+    border-top-left-radius: 5px;
+    
+    
+}
+.sa2{
+    background-color: #fce5e1;
+    color: #fc765b;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+
+#subimg{
+    
+    -webkit-animation: action 1s infinite  alternate;
+        animation: action 1s infinite  alternate;
+   margin-bottom: 190px;
+ 
+    
+     
+}
+ @-webkit-keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+    @keyframes action {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+button:hover{
+    
+    box-shadow: 0 0 8px #cacfcc;
+}
+button:focus{
+    outline:none;
+    box-shadow: 0 0 8px #cacfcc;
+    
+    
+}
+
+/*Calendar CSS*/
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 11.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}

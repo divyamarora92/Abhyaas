@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+<!--SIDE BAR-->
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <img src="img/teacher1.png" height="130px" width="130px"  class="rounded-circle mx-auto d-block mt-2" align="center" alt="KIET">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand " href="#">
+                    <div class="sidebar-brand-icon  mt-5 ml-0"><img src="img/teacher.svg" height="30px" width="30px">
+                    <span class="head text-dark">1802912062 </span></div>
+                </a>
+                <br>
+               
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
+
+                     <li class="nav-item"><a class="nav-link " href="faculty.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="chat.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-user-cog mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child"><b>Settings</b></span></a></li>
+                    
+                </ul>
+<!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
+
+                <div class="text-center" style="font-weight: 900; margin-top: 80px;"><button type="button" onClick= "signOut()" class="btn btn-outline-primary"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a>
+
+</div>
+                
+                
+            </div>
+        </nav>
+<!--SIDE BAR-->
+        
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+            <div class="container-fluid" style="background-color: white; ">
+                <div class="row">
+                    <div class="col-sm-9 pl-4 pr-4" style="background-color: whitesmoke; ">
+                        <br>
+                        <br>
+                        <h4><b>Dashboard</b></h4>
+                        <div class="card" style="background-color:#dfe1f5">
+                            <div class=row>
+
+                            <div class="card-body d1 col-sm-8"><h3 id= "title" style="font-weight: 900;color: #0080ff"></h3>Please check your dashboard for further operations</div>
+
+                                <div class="col-sm-4"><img class="img-responsive" style="height:150px;width:200px;float:right" src="img/upteacher.jpeg"></div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <h5><b>Session 2020-2021</b></h5>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="card" style="height:150px" >
+                                    <div class="row container">
+                                    <div class=col-sm-8>
+                                        <h4 style="font-weight: 800;margin-top:40px;color: #32a89d">Upload Notes</h4>
+                                    </div>
+                                    <div class=col-sm-4>
+                                        <img style="height:60px;margin-top:40px" src="img/notes.svg">
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card" style="height:150px">
+                                    <div class="row container">
+                                    <div class=col-sm-9>
+                                        <h5 style="font-weight: 800;margin-top:40px;color:#f20781">Attendance Form</h5>
+                                    </div>
+                                    <div class=col-sm-3>
+                                        <img style="height:60px;margin-top:40px" src="img/form.svg">
+                                    </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="card" style="height:150px">
+                                    <div class="row container">
+                                    <div class=col-sm-9>
+                                        <a href="quizmaking.html" style="text-decoration: none"><h4 style="font-weight: 800;margin-top:40px;color: #00ccff">Take Quiz</h4></a>
+                                    </div>
+                                    <div class=col-sm-3>
+                                        <img style="height:60px;margin-top:40px" src="img/choose.svg">
+                                    </div>
+                                    </div>
+                                
+                                </div>
+                            </div>
+                        </div><br>
+                        <h5><b>Submission</b></h5>
+                        <div class="row">
+                            
+                            <div class="col-sm-4">
+                                
+                                <button type="button" class="btn btn-outline-primary btn-block pt-3" style="background-color: white"><h4 style="font-weight: 800;color:#00ccff;">Assingments</h4></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-outline-danger btn-block pt-3" style="background-color: white"><h4  style="font-weight: 800;color: #f20781">Experiments</h4></button>
+                            </div>
+                            <div class="col-sm-4">
+                                <button type="button" class="btn btn-outline-primary btn-block pt-3" style="background-color: white"><h4  style="font-weight: 800;color:#32a89d">Quizes</h4></button>
+                            
+                            </div>
+                        </div>
+                        <br>
+                        <h5><b>Attendance</b></h5>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                    <div class="card pt-2 " style="height: 150px">
+                                            <h5 align="center" style="font-weight: 800;color:#32a89d">Upload Attendance</h5>
+                                            <img style="padding-top: 10px" src="img/attendance.svg">
+                                    </div>
+                                        
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="card pt-2" style="height: 150px">
+                                            <h5 align="center" style="font-weight: 800;color:#00ccff">Update Attendance</h5>
+                                            <img style="padding-top: 10px" src="img/update%20attendance.svg">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                   
+                            
+                                </div>
+                            <br>
+                           <h5><b>Exams</b></h5>
+                        
+                        <div class="row">
+                                <div class="col-sm-4">
+                                        <div class="card pt-2" style="height: 150px">
+                                            <h5 align="center" style="font-weight: 800; color: #d4aded">Test <br>Results</h5>
+                                            <img style="padding-top: 20px" src="img/testresults.svg">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                             <div class="col-sm-4">
+                                
+                                
+                                        <div class="card pt-2" style="height: 150px">
+                                            <h5 align="center" style="font-weight: 800; color: #ffb300">Upload <br>Test Papers</h5>
+                                            <img style="padding-top:10px" src="img/testpaper.svg">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        <br>
+                            
+                        
+                        
+                    </div>
+
+                    <div class="col-sm-3 pr-0 " style="color: black; background-color: white;">
+                        <img src="img/kiet%20logo.png" height="100px" width="100px" style="border:5px solid #2fa388" class="rounded-circle mx-auto d-block mt-5" align="center" alt="KIET"><br>
+                        <h5 align="center"><b>KIET Group of Institutions</b></h5>
+                        <h6 align="center"><a href="#" ><em>www.kiet.edu</em></a></h6><br>
+                        <div class="card ml-1 mr-1">
+                            <div class="card-body pr-3 pl-3 " style="background-color:lightgrey">
+                                <h5 align="center"><em><b>Upcoming Events</b></em></h5><br>
+                                <ol>
+                                    
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                    <hr>
+                                    <li></li>
+                                  
+                                    
+                                </ol>
+                            </div>
+                            
+                        </div>
+                       
+                    
+                
+            </div>
+        </div>
+                </div>
+            
+            </div>
+    </div>
+    
+        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-functions-compat.js"></script>
+    <script src="js/init.js"></script>
+ 
+
+    <!-- Initialize Firebase -->
+
+    <!-- <script src="js/auth.js"></script> -->
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

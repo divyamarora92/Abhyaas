@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Student Portal</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="home.css">
+
+    <link rel="stylesheet" href="loader.css">
+    <script src="loader.js"></script>
+</head>
+
+<body style="background-color: whitesmoke;"id="page-top">
+    <div id="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"><img class="icon" src="https://raziraz.github.io/codepen/img/bolt.svg">
+</div>
+
+<main id="site" role="main">
+
+
+    <div class="box" >
+    <div class="row">
+        <div class="col-sm-6">
+            <img src="img/loginlogo.jpeg" height="630px" width="100%;">
+        
+        </div>
+        <div class="col-sm-6" >
+            <div class="card cardlogin pt-3 pl-5 pr-5 pb-5" style="background-color:white; display: block;" id="display0">
+                <div class="row">
+
+                    <button class="col-sm-6 c1 pt-2 sbtn" onclick="studentlogin()" >
+                        <img src="img/student.svg" height="40px" width="40px">
+                        <span class="head l1 ml-3"><b>STUDENT</b></span>
+                    </button>
+                    <button class="col-sm-6 c2 pt-2 bg-light tbtn"  onclick="teacherlogin()" >
+
+                        <img src="img/teacher.svg" height="45px" width="45px">
+                        <span class="head l2 ml-3"><b>TEACHER</b></span> 
+                    </button>
+                </div>
+                <br>
+
+                <div class="row lform"  id="display1" >
+                    <div class="col-sm-12 p-0">
+
+                
+
+                <form class = "studentLogin">
+                    <label for="fname"><b>Enter your Roll no</b></label>
+                    <input type="text" name="email" placeholder="Enter Your email">
+                    <br>
+                    <br>
+                    <label for="lname"><b>Password</b></label>
+                    <input type="password" name="password" placeholder="Enter Your password">
+                    <br>
+                    <br>
+                    <b><input type="submit" value="Log In"></b>
+                    <p class="error" style="font-size: 20px">
+                    
+                    </p>
+                </form>
+                        <center><h6 style="color: #e88935;">Dont have an account ?<span class="s1 ml-1"><b><a href="#" onclick="signup()" Style="color: #55b0e6;">Sign up</a></b></span></h6>
+
+                            <h6 class="s1"><b><i>Forgot Your Password?</i></b></h6>
+                           <a href="chat.html"><button class="c1" >
+                                <span class="head"><b>Login As Guest/Parent</b></span>
+                            </button></a>
+                        </center>
+                    </div>
+                </div>
+
+
+                
+
+                <div class="row l2form " Style="display: none; color: #55b0e6;" id="display2">
+                    <div class="col-sm-12 p-0">
+                <form class = "teacherLogin">
+                    <label for="fname" style="color:#55b0e6"><b>Enter your User ID</b></label>
+
+                    <input type="text" name="email2" placeholder="Enter Your User Id" style="border: 1px solid #55b0e6;">
+                    <br>
+                    <br>
+                    <label for="lname" style="color: #55b0e6"><b>Password</b></label>
+                    <input type="password" name="password2" placeholder="Enter Your password" style="border: 1px solid #55b0e6;">
+
+                    <br>
+                    <br>
+                    <input type="submit" value="Log In" style="background-color: #55b0e6">
+                    <p class="error" style="font-size: 20px"></p>
+                </form>
+                        <center><h6 style="color:#55b0e6;">Dont have an account ?<span class="s2 ml-1"><b><a href="#" onclick="signup2()" Style="color: #e88935;">Sign up</a></b></span></h6>
+                            <h6 class="s2"><b><i>Forgot Your Password?</i></b></h6>
+                            <a href="chat.html"><button class="c1" style="border: 3px solid #55b0e6; color:#55b0e6 " >
+                            <span class="head"><b>Login As Guest/Parent</b></span>
+                           </button></a>
+                        </center>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card cardlogin pt-4  pl-5 pr-5 pb-5" style="background-color:white; display: none" id="studentsignin">
+                <center><img src="img/student.svg" height="40px" width="40px">
+                        <span class="head l1 ml-2 mt-5"><b>STUDENT REGISTRATION</b></span>
+                </center>
+
+               
+
+                <br>
+                <div class="row lform" >
+                    <div class="col-sm-12 p-0">
+
+                
+
+                <form class = "studentRegister" > 
+                    <label for="fname"><b>Enter Your Email</b></label>
+                    <input type="text"  name="email" placeholder="Enter email">
+
+                    <br>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <label for="fname"><b>First Name</b></label>
+
+                    <input type="text"  name="firstname" placeholder="Enter Your First Name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lname"><b>Last Name</b></label>
+                        <input type="text"  name="lastname" placeholder="Enter Your Second Name">
+                    </div>
+                    </div>
+                    <label for="lname"><b>Password</b></label>
+                    <input type="password"  name="password" placeholder="Choose Your password">
+                    <label for="lname"><b>Confirm Password</b></label>
+                    <input type="password"  name="repassword" placeholder="Re-enter Your password">
+                    <br>
+                    
+
+                    <input type="submit" value="Sign Up">
+                    
+                      </form>
+                        <p class="error" style="font-size: 20px"></p>
+                        <center><h6 style="color: #e88935;">Do you already have an account?<span class="s1 ml-1"><b><a href="#"  onclick="logins()" Style="color: #55b0e6;">Log in</a></b></span></h6></center>
+
+                       
+                    </div>
+                </div>
+                
+                        
+
+                
+                
+            </div>
+            <div class="card cardlogin pt-4  pl-5 pr-5 pb-5" style="background-color:white; display: none" id="teachersignin">
+                <center><img src="img/teacher.svg" height="40px" width="40px">
+                        <span class="head l2 ml-2 mt-5"><b>TEACHER REGISTRATION</b></span>
+                </center>
+                <br>
+                <div class="row lform" >
+                    <div class="col-sm-12 p-0">
+
+                <form class = "teacherRegister">
+                    <label for="fname" style="color: #55b0e6;"><b>Enter your User Id</b></label>
+                    <input type="text" name="email2" placeholder="Enter Your User id" style="border: 1px solid #55b0e6">
+                    <br>
+                    <div class="row">
+                    <div class="col-sm-6">
+                    <label for="fname" style="color:#55b0e6;"><b>First Name</b></label>
+                    <input type="text" name="firstname2" placeholder="Enter Your First Name" style="border: 1px solid #55b0e6">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="lname" style="color: #55b0e6;"><b>Last Name</b></label>
+                        <input type="text"  name="lastname2" placeholder="Enter Your Second Name" style="border: 1px solid #55b0e6">
+                    </div>
+                    </div>
+                    <label for="lname" style="color:#55b0e6;"><b>Password</b></label>
+                    <input type="password"  name="password2" placeholder="Choose Your password" style="border: 1px solid #55b0e6">
+                    <label for="lname" style="color: #55b0e6;"><b>Confirm Password</b></label>
+                    <input type="password" name="repassword2" placeholder="Re-enter Your password" style="border: 1px solid #55b0e6">
+                    <br>
+                    
+                    <input type="submit" value="Sign Up" style="background-color: #55b0e6">
+                </form>
+                        <center><h6 style="color: #e88935;">Do you already have an account?<span class="s2 ml-1"><b><a href="#" onclick="logint()" Style="color: #55b0e6;">Log in</a></b></span></h6></center>
+
+                       
+                    </div>
+                </div>
+                
+              </div>
+            
+        
+        </div>
+    
+    </div>
+    </div>
+   
+    
+    <script src="js/login.js" type="text/javascript"></script>
+
+
+
+    
+    <!-- Initialize Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/auth.js"></script>
+    
+
+    </body>
+</html>

@@ -1,0 +1,109 @@
+/**
+* PAGE PRELOADER
+* Replace with your own icon or logo and use on your site
+*/
+
+/**
+* VARIABLES
+* Tweak them for prefered result 
+*/
+@diameter: 40px;
+@spinner: 2px;
+@spinner-color: #2fc394;
+@icon-width: 10.6px;
+@icon-height: 25px;
+
+#site {
+  opacity: 0;
+  transition: all 1s ease;
+}
+
+#preloader {
+  height: @diameter;
+  width: @diameter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -(@diameter/2);
+  margin-left: -(@diameter/2);
+    &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -(@spinner/2);
+    top: -(@spinner/2);
+    height: 100%;
+    width: 100%;
+    animation: rotation 1s linear infinite;
+    border: (@spinner/2) solid @spinner-color;
+    border-top: (@spinner/2) solid transparent;
+    border-radius: 100%;
+    }
+    &>.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: @icon-height;
+    width: @icon-width;
+    margin-top: -(@icon-height/2);
+    margin-left: -(@icon-width/2);
+    animation: wink 1s ease-in-out infinite alternate;
+  }
+}
+
+@media only screen and (min-width:768px) {
+  #preloader {
+    height: (@diameter*1.5);
+    width: (@diameter*1.5);
+    margin-top: -((@diameter/2)*1.5);
+    margin-left: -((@diameter/2)*1.5);
+      &:before {
+        left: -@spinner;
+        top: -@spinner;
+        border-top-width: @spinner;
+        border-left-width: @spinner;
+        border-bottom-width: @spinner;
+        border-right-width: @spinner;
+      }
+      &>.icon {
+        height: (@icon-height*1.5);
+        width: (@icon-width*1.5);
+        margin-top: -((@icon-height/2)*1.5);
+        margin-left: -((@icon-width/2)*1.5);
+    }
+  }
+}
+
+@media only screen and (min-width:1200px) {
+  #preloader {
+    height: (@diameter*2);
+    width: (@diameter*2);
+    margin-top: -((@diameter/2)*2);
+    margin-left: -((@diameter/2)*2);
+      &>.icon { 
+        height: (@icon-height*2);
+        width: (@icon-width*2);
+        margin-top: -((@icon-height/2)*2);
+        margin-left: -((@icon-width/2)*2);
+    }
+  }
+}
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes wink {
+    from  { 
+      opacity:0; 
+    }
+    to  { 
+      opacity:1; 
+    }
+}
