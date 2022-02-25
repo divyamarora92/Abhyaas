@@ -1,229 +1,419 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
     <title>Student Portal</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
-    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="home.css">
-</head>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+  </head>
 
-<body id="page-top">
+  <body id="page-top">
     <div id="wrapper">
-<!--SIDE BAR-->
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
-            <div class="container-fluid d-flex flex-column p-0">
-                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
-                    <div class="sidebar-brand-icon  mt-5 ml-0"><img src="img/student.svg" height="30px" width="30px">
-                    <span class="head text-dark">1802912062 </span></div>
-                </a>
-                <br>
-                <br>
-                <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
-                     <li class="nav-item"><a class="nav-link " href="home.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
-                   <li class="nav-item"><a class="nav-link" href="facultylist.html"><i class="fas fa-user-friends mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child"><b>Faculties</b></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="class.html"><i class="fas fa-book-open mr-2 ml-4" style="color: blue; font-size: 120%"></i><span  class="child" ><b>Classes</b></span></a></li>
-                    
-                    
-                    <li class="nav-item"><a class="nav-link" href="chat.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-user-cog mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child"><b>Settings</b></span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Profile</b></span></a></li>
-                </ul>
-<!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
-                <div class="text-center" style="font-weight: 900; margin-top: 80px;"><a href="index.html"><button type="button" class="btn btn-outline-primary"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a>
-</div>
-                
-                
+      <!--SIDE BAR-->
+      <nav
+        class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0"
+      >
+        <div class="container-fluid d-flex flex-column p-0">
+          <a
+            class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
+            href="#"
+          >
+            <div class="sidebar-brand-icon mt-5 ml-0">
+              <img src="img/student.svg" height="30px" width="30px" />
+              <span class="head text-dark">1802912062 </span>
             </div>
-        </nav>
-        
-        
-        
-         <div class="d-flex flex-column" id="content-wrapper">
-            <div id="content">
-            <div class="container-fluid" style="background-color: white; ">
-                <div class="row">
-                    <div class="col-sm-9" style="background-color: whitesmoke; height: 800px">
-                        <br>
-                        
-                        <div class="card pl-5 pt-5 pr-3">
+          </a>
+          <br />
+          <br />
+          <hr class="sidebar-divider my-0" />
+          <ul class="nav navbar-nav text-primary" id="accordionSidebar">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"
+                ><i
+                  class="fas fa-tachometer-alt mr-2 ml-4"
+                  style="color: blue; font-size: 120%"
+                ></i
+                ><span class="child"><b>Dashboard</b></span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="facultylist.html"
+                ><i
+                  class="fas fa-user-friends mr-2 ml-4"
+                  style="color: blue; font-size: 120%"
+                ></i
+                ><span class="child"><b>Faculties</b></span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="class.html"
+                ><i
+                  class="fas fa-book-open mr-2 ml-4"
+                  style="color: blue; font-size: 120%"
+                ></i
+                ><span class="child"><b>Classes</b></span></a
+              >
+            </li>
 
-
-                            <center><h3 id="subjectTitle" style="font-family: serif; color: #0a75c2"><b>WEB TECHNOLOGY</b></h3>
-                                <h5 style="font-family: serif;"><b>Session 2019-20</b></h5>
-                            </center>
-                            <br>
-                            
-                            <div class=row>
-                                
-                            <div class="card-body col-sm-6 scrollbar">
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <div class="" style="height:150px; border: none" >
-                                    <div class="row container">
-                                    <div class=col-sm-8>
-                                        <h5 style="font-weight: 800;margin-top:40px;color: #32a89d">Class <br>Notes</h5>
-                                    </div>
-                                    <div class=col-sm-4>
-                                        <img style="height:60px;margin-top:41px" src="img/notes.svg">
-                                    </div>
-                                        <br>
-                                        <br>
-                                        <button type="button" class="btn btnw  btn-sm ml-5 mt-3 pr-2 pl-2"><b><a  href="classnotes.html" style="color: white;">Let's See</a></b></button>
-                                    </div>
-                                </div>
-                                    
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="" style="height:150px; border: none">
-                                    <div class="row container">
-                                    <div class=col-sm-8>
-                                        <h5 style="font-weight: 800;margin-top:40px;color: #00ccff">Quiz</h5>
-                                    </div>
-                                    <div class=col-sm-4>
-                                        <img style="height:60px;margin-top:40px" src="img/choose.svg">
-                                    </div>
-                                        <br>
-                                        <br>
-                                        <button type="button" class="btn btnw2  btn-sm ml-5 mt-3 pr-2 pl-2"><b><a  href="quiz.html" style="color: white;">Let's See</a></b></button>
-                                    </div>
-                                
-                                </div>
-                                    </div>
-                                
-                                </div>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-sm-6">
-                                        <center><img src="img/table.svg" height="60px" width="60px" class="rounded-circle mx-auto d-block">
-                                            <h5 style="font-weight: 800;margin-top:10px;color: #46c4fa"><b>Assignments</b></h5>
-                                            <button type="button" class="btn btnw2  btn-sm " style="background-color: #46c4fa"><b><a  href="assignment.html" style="color: white;">Let's See</a></b></button>
-                                            
-                                        </center>
-                                        
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <center><img src="img/result.svg" height="60px" width="60px" class="rounded-circle mx-auto d-block">
-                                            <h5 style="font-weight: 800;margin-top:10px;color: #0a75c2"><b>Test Result</b></h5>
-                                            <button type="button" class="btn btnw2  btn-sm ml-2" style="background-color: #0a75c2"><b><a  href="quizresults.html" style="color: white;">Let's See</a></b></button>
-                                            
-                                        </center>
-                                    </div>
-                                </div>
-                                <hr>
-                                <center><div class="row exps pt-4 pl-4">
-                                    <div class="col-sm-3 ">
-                                         <i class="	fa fa-paste mr-2 ml-2 mt-2" style="color:#69c795; font-size: 210%" ></i>
-                                    </div>
-                                    <div class="col-sm-9 pr-4">
-                                        <h5 style="font-weight: 800;color: #69c795"><b><a  href="exp_submission.html" style="color: #69c795;">Experiment <br> Submission</a></b></h5>
-                                    </div>
-                                
-                                    </div></center>
-                                
-                                
-                                
-                                   
-                                
-                                    
-                               
-                            </div>
-                            <div class="card-body col-sm-6">
-                                <h6><b>Today's lecture</b></h6>
-                                <div class="row bg-light" style="height: 160px; width: 100%">
-                                <iframe width="100%" height="100%"
-                                        src="https://www.youtube.com/embed/H-613UhLkxI">
-                                </iframe>
-                                
-                                </div>
-                                <br>
-                                <h6><b>Previous Lectures</b></h6>
-                                <div id="prevlectures">
-                                 <div class="row bg-light " style="height: 100px; width: 100%">
-                                    <iframe width="100%" height="100%"
-                                        src="https://www.youtube.com/embed/iDCCeoli-0o">
-                                </iframe>
-                                
-                                </div>
-                                <br>
-                                <div class="row bg-light" style="height: 100px; width: 100%">
-                                    <iframe width="100%" height="100%"
-                                        src="https://www.youtube.com/embed/H-613UhLkxI">
-                                </iframe>
-                                
-                                </div>
-                                    <br>
-                                    <div class="row bg-light" style="height: 100px; width: 100%">
-                                    <iframe width="100%" height="100%"
-                                        src="https://www.youtube.com/embed/H-613UhLkxI">
-                                </iframe>
-                                
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                                
-                            
-                        </div>
-                     </div>
-
-        
-        
-        <div class="col-sm-3 " style="color: black; background-color: white;">
-                        <img src="img/kiet%20logo.png" height="100px" width="100px" style="border:5px solid #2fa388" class="rounded-circle mx-auto d-block mt-5" align="center" alt="KIET"><br>
-                        <h5 align="center"><b>KIET Group of Institutions</b></h5>
-                        <h6 align="center"><a href="#" ><em>www.kiet.edu</em></a></h6><br>
-                        <div class="card ml-1 mr-1">
-                            <div class="card-body pr-3 pl-3 " style="background-color:lightgrey">
-                                <h5 align="center"><em><b>Upcoming Events</b></em></h5><br>
-                                <ol>
-                                    
-                                    <li></li>
-                                    <hr>
-                                    <li></li>
-                                    <hr>
-                                    <li></li>
-                                    <hr>
-                                    <li></li>
-                                  
-                                    
-                                </ol>
-                            </div>
-                            
-                        </div>
-                       
-                    
-                
-            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="chat.html"
+                ><i
+                  class="far fa-comment-alt mr-2 ml-4"
+                  style="color: blue; font-size: 120%"
+                ></i
+                ><span class="child"><b>Chats</b></span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="table.html"
+                ><i
+                  class="fas fa-user-cog mr-2 ml-4"
+                  style="color: blue; font-size: 120%"
+                ></i
+                ><span class="child"><b>Settings</b></span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html"
+                ><i
+                  class="fas fa-user mr-2 ml-4"
+                  style="color: blue; font-size: 120%"
+                ></i
+                ><span class="child"><b>Profile</b></span></a
+              >
+            </li>
+          </ul>
+          <!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
+          <div class="text-center" style="font-weight: 900; margin-top: 80px">
+            <a href="index.html"
+              ><button type="button" class="btn btn-outline-primary">
+                <b>Sign out</b
+                ><img
+                  src="https://img.icons8.com/officexs/30/000000/logout-rounded.png"
+                  style="margin-left: 5px"
+                /></button
+            ></a>
+          </div>
         </div>
+      </nav>
+
+      <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+          <div class="container-fluid" style="background-color: white">
+            <div class="row">
+              <div
+                class="col-sm-9"
+                style="background-color: whitesmoke; height: 800px"
+              >
+                <br />
+
+                <div class="card pl-5 pt-5 pr-3">
+                  <center>
+                    <h3
+                      id="subjectTitle"
+                      style="font-family: serif; color: #0a75c2"
+                    >
+                      <b>WEB TECHNOLOGY</b>
+                    </h3>
+                    <h5 style="font-family: serif"><b>Session 2019-20</b></h5>
+                  </center>
+                  <br />
+
+                  <div class="row">
+                    <div class="card-body col-sm-6 scrollbar">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="" style="height: 150px; border: none">
+                            <div class="row container">
+                              <div class="col-sm-8">
+                                <h5
+                                  style="
+                                    font-weight: 800;
+                                    margin-top: 40px;
+                                    color: #32a89d;
+                                  "
+                                >
+                                  Class <br />Notes
+                                </h5>
+                              </div>
+                              <div class="col-sm-4">
+                                <img
+                                  style="height: 60px; margin-top: 41px"
+                                  src="img/notes.svg"
+                                />
+                              </div>
+                              <br />
+                              <br />
+                              <button
+                                type="button"
+                                class="btn btnw btn-sm ml-5 mt-3 pr-2 pl-2"
+                              >
+                                <b
+                                  ><a
+                                    href="classnotes.html"
+                                    style="color: white"
+                                    >Let's See</a
+                                  ></b
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="" style="height: 150px; border: none">
+                            <div class="row container">
+                              <div class="col-sm-8">
+                                <h5
+                                  style="
+                                    font-weight: 800;
+                                    margin-top: 40px;
+                                    color: #00ccff;
+                                  "
+                                >
+                                  Quiz
+                                </h5>
+                              </div>
+                              <div class="col-sm-4">
+                                <img
+                                  style="height: 60px; margin-top: 40px"
+                                  src="img/choose.svg"
+                                />
+                              </div>
+                              <br />
+                              <br />
+                              <button
+                                type="button"
+                                class="btn btnw2 btn-sm ml-5 mt-3 pr-2 pl-2"
+                              >
+                                <b
+                                  ><a href="quiz.html" style="color: white"
+                                    >Let's See</a
+                                  ></b
+                                >
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <center>
+                            <img
+                              src="img/table.svg"
+                              height="60px"
+                              width="60px"
+                              class="rounded-circle mx-auto d-block"
+                            />
+                            <h5
+                              style="
+                                font-weight: 800;
+                                margin-top: 10px;
+                                color: #46c4fa;
+                              "
+                            >
+                              <b>Assignments</b>
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn btnw2 btn-sm"
+                              style="background-color: #46c4fa"
+                            >
+                              <b
+                                ><a href="assignment.html" style="color: white"
+                                  >Let's See</a
+                                ></b
+                              >
+                            </button>
+                          </center>
+                        </div>
+                        <div class="col-sm-6">
+                          <center>
+                            <img
+                              src="img/result.svg"
+                              height="60px"
+                              width="60px"
+                              class="rounded-circle mx-auto d-block"
+                            />
+                            <h5
+                              style="
+                                font-weight: 800;
+                                margin-top: 10px;
+                                color: #0a75c2;
+                              "
+                            >
+                              <b>Test Result</b>
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn btnw2 btn-sm ml-2"
+                              style="background-color: #0a75c2"
+                            >
+                              <b
+                                ><a href="quizresults.html" style="color: white"
+                                  >Let's See</a
+                                ></b
+                              >
+                            </button>
+                          </center>
+                        </div>
+                      </div>
+                      <hr />
+                      <center>
+                        <div class="row exps pt-4 pl-4">
+                          <div class="col-sm-3">
+                            <i
+                              class="fa fa-paste mr-2 ml-2 mt-2"
+                              style="color: #69c795; font-size: 210%"
+                            ></i>
+                          </div>
+                          <div class="col-sm-9 pr-4">
+                            <h5 style="font-weight: 800; color: #69c795">
+                              <b
+                                ><a
+                                  href="exp_submission.html"
+                                  style="color: #69c795"
+                                  >Experiment <br />
+                                  Submission</a
+                                ></b
+                              >
+                            </h5>
+                          </div>
+                        </div>
+                      </center>
+                    </div>
+                    <div class="card-body col-sm-6">
+                      <h6><b>Today's lecture</b></h6>
+                      <div
+                        class="row bg-light"
+                        style="height: 160px; width: 100%"
+                      >
+                        <iframe
+                          width="100%"
+                          height="100%"
+                          src="https://www.youtube.com/embed/H-613UhLkxI"
+                        >
+                        </iframe>
+                      </div>
+                      <br />
+                      <h6><b>Previous Lectures</b></h6>
+                      <div id="prevlectures">
+                        <div
+                          class="row bg-light"
+                          style="height: 100px; width: 100%"
+                        >
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/iDCCeoli-0o"
+                          >
+                          </iframe>
+                        </div>
+                        <br />
+                        <div
+                          class="row bg-light"
+                          style="height: 100px; width: 100%"
+                        >
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/H-613UhLkxI"
+                          >
+                          </iframe>
+                        </div>
+                        <br />
+                        <div
+                          class="row bg-light"
+                          style="height: 100px; width: 100%"
+                        >
+                          <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/embed/H-613UhLkxI"
+                          >
+                          </iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            
+              </div>
+
+              <div
+                class="col-sm-3"
+                style="color: black; background-color: white"
+              >
+                <img
+                  src="img/kiet%20logo.png"
+                  height="100px"
+                  width="100px"
+                  style="border: 5px solid #2fa388"
+                  class="rounded-circle mx-auto d-block mt-5"
+                  align="center"
+                  alt="KIET"
+                /><br />
+                <h5 align="center"><b>KIET Group of Institutions</b></h5>
+                <h6 align="center">
+                  <a href="#"><em>www.kiet.edu</em></a>
+                </h6>
+                <br />
+                <div class="card ml-1 mr-1">
+                  <div
+                    class="card-body pr-3 pl-3"
+                    style="background-color: lightgrey"
+                  >
+                    <h5 align="center">
+                      <em><b>Upcoming Events</b></em>
+                    </h5>
+                    <br />
+                    <ol>
+                      <li></li>
+                      <hr />
+                      <li></li>
+                      <hr />
+                      <li></li>
+                      <hr />
+                      <li></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <a class="border rounded d-inline scroll-to-top" href="#page-top"
+        ><i class="fas fa-angle-up"></i
+      ></a>
     </div>
-        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
- <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.21.1/firebase-app.js"></script>
-
-    <script src="/__/firebase/7.21.1/firebase-auth.js"></script>
-    <script src="/__/firebase/7.21.1/firebase-firestore.js"></script>
-    <script src="/__/firebase/7.21.1/firebase-functions.js"></script>
-    <script src="/__/firebase/7.21.1/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
-</body>
-
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="js/init.js"></script>
+  </body>
 </html>
