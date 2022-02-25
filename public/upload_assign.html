@@ -30,83 +30,33 @@
   <body id="page-top">
     <div id="wrapper">
       <!--SIDE BAR-->
-      <nav
-        class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion p-0"
-      >
-        <div class="container-fluid d-flex flex-column p-0">
-          <a
-            class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0"
-            href="#"
-          >
-            <div class="sidebar-brand-icon mt-5 ml-0">
-              <img src="images/student.svg" height="30px" width="30px" />
-              <span class="head text-dark">1802912062 </span>
-            </div>
-          </a>
-          <br />
-          <br />
-          <hr class="sidebar-divider my-0" />
-          <ul class="nav navbar-nav text-primary" id="accordionSidebar">
-            <li class="nav-item">
-              <a class="nav-link" href="home.html"
-                ><i
-                  class="fas fa-tachometer-alt mr-2 ml-4"
-                  style="color: blue; font-size: 120%"
-                ></i
-                ><span class="child"><b>Dashboard</b></span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="facultylist.html"
-                ><i
-                  class="fas fa-user-friends mr-2 ml-4"
-                  style="color: blue; font-size: 120%"
-                ></i
-                ><span class="child"><b>Faculties</b></span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="class.html"
-                ><i
-                  class="fas fa-book-open mr-2 ml-4"
-                  style="color: blue; font-size: 120%"
-                ></i
-                ><span class="child"><b>Classes</b></span></a
-              >
-            </li>
+      <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
+            <div class="container-fluid d-flex flex-column p-0">
+                <img src="images/teacher1.png" height="130px" width="130px"  class="rounded-circle mx-auto d-block mt-2" align="center" alt="KIET">
+                    <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand " href="#">
+                    <div class="sidebar-brand-icon  mt-5 ml-0"><img src="images/teacher.svg" height="30px" width="30px">
+                    <span class="head text-dark">1802912062 </span></div>
+                </a>
+                <br>
+               
+                <hr class="sidebar-divider my-0">
+                <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
 
-            <li class="nav-item">
-              <a class="nav-link" href="chat.html"
-                ><i
-                  class="far fa-comment-alt mr-2 ml-4"
-                  style="color: blue; font-size: 120%"
-                ></i
-                ><span class="child"><b>Chats</b></span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="table.html"
-                ><i
-                  class="fas fa-user-cog mr-2 ml-4"
-                  style="color: blue; font-size: 120%"
-                ></i
-                ><span class="child"><b>Settings</b></span></a
-              >
-            </li>
-          </ul>
-          <!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
-          <div class="text-center" style="font-weight: 900; margin-top: 80px">
-            <a href="index.html"
-              ><button type="button" class="btn btn-outline-primary">
-                <b>Sign out</b
-                ><img
-                  src="https://img.icons8.com/officexs/30/000000/logout-rounded.png"
-                  style="margin-left: 5px"
-                /></button
-            ></a>
-          </div>
-        </div>
-      </nav>
+                     <li class="nav-item"><a class="nav-link " href="faculty.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+                    
+                    <li class="nav-item"><a class="nav-link" href="chat.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-user-cog mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child"><b>Settings</b></span></a></li>
+                    
+                </ul>
+<!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
+
+                <div class="text-center" style="font-weight: 900; margin-top: 80px;"><button type="button" onClick= "signOut()" class="btn btn-outline-primary"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a>
+
+</div>
+                
+                
+            </div>
+        </nav>
 
       <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
@@ -117,24 +67,29 @@
                 style="background-color: whitesmoke; height: 800px"
               >
                 <br />
-                <h3 class="ml-3"><b>Experiment Submission</b></h3>
+                <h3 class="ml-3"><b>Upload Assignment</b></h3>
                 <div
                   class="card ml-2 mr-2 pl-5 pt-5 pr-5"
                   style="height: 600px"
                 >
                   <center>
-                    <div class="sub p-0">
-                      <div class="row sub1 m-0 p-0">
+                    <div class="suba p-0">
+                      <div class="row suba1 m-0 p-0">
                         <div class="col-2 pt-1">
                           <input type="file" id="uploader" />
                         </div>
+
+                        <div class="col-8"></div>
                       </div>
-                      <img
-                        src="images/file.svg"
-                        height="250px"
-                        width="100px"
-                        id="subimg"
-                      />
+
+                      <center>
+                        <img
+                          src="images/file%20-%20Copy.svg"
+                          height="250px"
+                          width="100px"
+                          id="subimg"
+                        />
+                      </center>
                     </div>
                   </center>
                   <br />
@@ -145,7 +100,8 @@
                     <button
                       type="button"
                       class="btn btn-lg"
-                      onClick="show()"
+                      onclick="show()"
+                      id="submitButton"
                       style="background-color: #70d4d4; color: white"
                     >
                       <i></i><b>Submit</b
@@ -156,11 +112,11 @@
                     </button>
 
                     <button
-                      type="button"
+                      type="file"
                       class="btn btn-lg ml-3"
                       style="background-color: #66bda8; color: white"
                     >
-                      <i></i><b>Upload</b
+                      <b>Reset</b
                       ><i
                         class="fa fa-refresh mr-2 ml-2"
                         style="color: white; font-size: 120%"
@@ -225,7 +181,7 @@
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
     <script src="JavaScript/init.js"></script>
 
     <script src="JavaScript/uploadingData.js"></script>
