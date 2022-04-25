@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Student Portal</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    />
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Styles/home.css" />
+  </head>
+
+  <body id="page-top">
+    <div id="wrapper">
+      <!--SIDE BAR-->
+      <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion  p-0">
+        <div class="container-fluid d-flex flex-column p-0">
+            <img src="images/teacher1.png" height="130px" width="130px"  class="rounded-circle mx-auto d-block mt-2" align="center" alt="KIET">
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand " href="#">
+
+                
+            </a>
+            <br>
+           
+            <hr class="sidebar-divider my-0">
+            <ul class="nav navbar-nav text-primary " id="accordionSidebar" >
+
+                 <li class="nav-item"><a class="nav-link " href="faculty.html"><i class="fas fa-tachometer-alt mr-2 ml-4" style="color: blue; font-size: 120%" ></i><span class="child"><b>Dashboard</b></span></a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="chat.html"><i class="far fa-comment-alt mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child" ><b>Chats</b></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-user-cog mr-2 ml-4" style="color: blue; font-size: 120%"></i><span class="child"><b>Settings</b></span></a></li>
+                
+            </ul>
+<!--                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>-->
+
+            <div class="text-center" style="font-weight: 900; margin-top: 80px;"><button type="button" onClick= "signOut()" class="btn btn-outline-primary"><b>Sign out</b><img src="https://img.icons8.com/officexs/30/000000/logout-rounded.png" style="margin-left: 5px"/></button></a>
+
+</div>
+            
+            
+        </div>
+    </nav>
+
+      <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+          <div class="container-fluid" style="background-color: white">
+            <div class="row">
+              <div class="col-sm-9" style="background-color: whitesmoke">
+                <br />
+                <h3><b>Assignments Status</b></h3>
+                <div class="card pl-5 pt-5 pr-5">
+                  <div class="row">
+                    <div class="card-body col-sm-3 pt-3">
+                      <h4 style="color: #f77765"><b>Anusha Nigam</b></h4>
+                    </div>
+                    <div class="card-body col-sm-5">
+                      <h5>Assignment 1 Submitted</h5>
+                    </div>
+                    <div class="card-body col-sm-2">
+                      
+                    </div>
+                    <div class="card-body col-sm-2 pl-5">
+                      <i
+                        class="fa fa-download"
+                        style="font-size: 24px; color: #2bcf6d"
+                      ></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="card-body col-sm-3 pt-3">
+                      <h4 style="color: #f77765"><b>Divyam Arora</b></h4>
+                    </div>
+                    <div class="card-body col-sm-5">
+                      <h5>Assignment 1 Submitted</h5>
+                    </div>
+                    <div class="card-body col-sm-2">
+                      
+                    </div>
+                    <div class="card-body col-sm-2 pl-5">
+                      <i
+                        class="fa fa-download"
+                        style="font-size: 24px; color: #2bcf6d"
+                      ></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="card-body col-sm-3 pt-3">
+                      <h4 style="color: #f77765"><b>Anubhav Chaudhary</b></h4>
+                    </div>
+                    <div class="card-body col-sm-5">
+                      <h5>Assignment 1 Pending</h5>
+                    </div>
+                    <div class="card-body col-sm-2">
+                      
+                    </div>
+                    <div class="card-body col-sm-2 pl-5">
+                      <i
+                        class="fa fa-download"
+                        style="font-size: 24px; color: #2bcf6d"
+                      ></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="card-body col-sm-3 pt-3">
+                      <h4 style="color: #f77765"><b>Saumya Singh</b></h4>
+                    </div>
+                    <div class="card-body col-sm-5">
+                      <h5>Assignment 1 Submitted</h5>
+                    </div>
+                    <div class="card-body col-sm-2">
+                      
+                    </div>
+                    <div class="card-body col-sm-2 pl-5">
+                      <i
+                        class="fa fa-download"
+                        style="font-size: 24px; color: #2bcf6d"
+                      ></i>
+                    </div>
+                  </div>
+                  <hr />
+                  <div class="row">
+                    <div class="card-body col-sm-3 pt-3">
+                      <h4 style="color: #f77765"><b>Aman Gupta</b></h4>
+                    </div>
+                    <div class="card-body col-sm-5">
+                      <h5>Assignment 1 pending</h5>
+                    </div>
+                    <div class="card-body col-sm-2">
+                      
+                    </div>
+                    <div class="card-body col-sm-2 pl-5">
+                      <i
+                        class="fa fa-download"
+                        style="font-size: 24px; color: #2bcf6d"
+                      ></i>
+                    </div>
+                  </div>
+                  <hr />
+                  
+                  <hr />
+                </div>
+              </div>
+
+              <div
+                class="col-sm-3"
+                style="color: black; background-color: white"
+              >
+                <img
+                  src="images/kiet%20logo.png"
+                  height="100px"
+                  width="100px"
+                  style="border: 5px solid #2fa388"
+                  class="rounded-circle mx-auto d-block mt-5"
+                  align="center"
+                  alt="KIET"
+                /><br />
+                <h5 align="center"><b>KIET Group of Institutions</b></h5>
+                <h6 align="center">
+                  <a href="#"><em>www.kiet.edu</em></a>
+                </h6>
+                <br />
+                <div class="card ml-1 mr-1">
+                  <div
+                    class="card-body pr-3 pl-3"
+                    style="background-color: lightgrey"
+                  >
+                    <h5 align="center">
+                      <em><b>Upcoming Events</b></em>
+                    </h5>
+                    <br />
+                    <ol>
+                      <li></li>
+                      <hr />
+                      <li></li>
+                      <hr />
+                      <li></li>
+                      <hr />
+                      <li></li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="border rounded d-inline scroll-to-top" href="#page-top"
+        ><i class="fas fa-angle-up"></i
+      ></a>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- Initialize Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-storage-compat.js"></script>
+    <script src="JavaScript/init.js"></script>
+  </body>
+</html>
